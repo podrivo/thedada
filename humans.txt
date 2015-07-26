@@ -1,3 +1,6 @@
+# Typeface, Design
+* Gabriel Figueiredo - gabrielfigueiredo.com
+
 # Design, Front-end
 * Pedro Ivo Hudson - podrivo.com
 
