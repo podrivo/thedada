@@ -1,7 +1,12 @@
-# default
-Basic site skeleton.
+# The Dada
+Relaxe sua musculatura e fique à vontade.
 
-## Author
+## Authors
+
+Gabriel Figueiredo
+
++ http://www.gabrielfigueiredo.com/
+
 Pedro Ivo Hudson
 
 + http://podrivo.com/
