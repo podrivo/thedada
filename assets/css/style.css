@@ -72,6 +72,9 @@ body {
 h1 {
   font-family: 'texgyrescholaregular', serif;
   font-size: 36px;
+  text-align: center;
+  color: #471013;
+  margin-top: 4%;
 }
 
 /* Hand */
@@ -98,13 +101,11 @@ h1 {
   font-size: 400px;
   text-align: center;
   color: #471013;
-  transform: rotate(90deg);
-  /*animation: point 2s infinite;*/
+  transform: rotate(90deg) translateX(-15px);
+  animation: point 2s infinite;
+  /*background-color: rgba(0,0,0,.3);*/
 }
-
-.on .hand span {
-  color: #fce7dd;
-}
+@keyframes point {50% {transform: rotate(90deg) translateX(15px);}}
 
 .hand span:before {
   position: absolute;
@@ -114,8 +115,27 @@ h1 {
   top: -130px;
   left: -280px;
 }
+.icon-duetos-02-01:before {
+  top: -145px;
+  left: -310px;
+}
+.icon-duetos-03-01:before {
+  top: -125px;
+  left: -310px;
+}
+.icon-duetos-04-01:before {
+  top: -190px;
+  left: -310px;
+}
+.icon-duetos-05-01:before {
+  top: -130px;
+  left: -325px;
+}
+.icon-duetos-06-01:before {
+  top: -142px;
+  left: -275px;
+}
 
-/*@keyframes point {50% {top: 0px;}}*/
 
 /* Anus */
 .anus {
@@ -148,19 +168,7 @@ h1 {
   display: block;
 }
 
-/*[class^="icon-"]:before, [class*=" icon-"]:before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-}*/
 
-/*.anus-svg {
-  fill: #4d0007;
-  transition: all .2s;
-}*/
-
-.on {background-color: #471013;}
-/*.on .anus-svg {fill: #ffeadd;}*/
+/* On */
+body.on {background-color: #471013;}
+.on .hand span, .on h1 {color: #fce7dd;}
