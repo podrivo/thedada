@@ -1,11 +1,13 @@
 # The Dada
 Relaxe sua musculatura e fique à vontade.
 
+https://www.myfonts.com/fonts/typeoca/the-dada/
+
 ## Authors
 
 Gabriel Figueiredo
 
-+ http://www.gabrielfigueiredo.com/
++ http://gabrielfigueiredo.com/
 
 Pedro Ivo Hudson
 
