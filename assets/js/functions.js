@@ -19,11 +19,19 @@ $(document).on('mousemove', function(e){
 
 
 // Play
-var audio = $('audio')[0];
-$('.anus').hover(function() {
-  audio.play();
+$('.anus span').hover(function() {
+  audio = $("#audio-0" + Math.ceil(Math.random() * 4))[0].play();
   $('body').addClass('on');
 }, function() {
-  audio.load();
   $('body').removeClass('on');
+});
+
+
+$(document).ready(function () {
+
+  // Random duet
+  total = 6;
+  randomNumber = Math.round(Math.random() * (total - 1)) + 1;
+  $('.hand span').addClass('icon-duetos-0' + randomNumber + '-01');
+  $('.anus').addClass('icon-duetos-0' + randomNumber + '-02');
 });
