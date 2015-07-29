@@ -1,8 +1,8 @@
 # The Dada
 Relaxe sua musculatura e fique à vontade.
 
-You can buy the entire font on MyFonts:
-https://www.myfonts.com/fonts/typeoca/the-dada/
+You can buy the entire font on MyFonts.
+Link: https://www.myfonts.com/fonts/typeoca/the-dada/
 
 ## Sounds
 Moaning and fart sounds downloaded from [Freesound](http://freesound.org)
@@ -14,9 +14,9 @@ Moaning and fart sounds downloaded from [Freesound](http://freesound.org)
 + moan, by @corsica_s
 
 ## Music
-Background music from [Incompetech](http://incompetech.com)
+Background music from [Kevin MacLeod](http://incompetech.com)
 + "Aces High" by Kevin MacLeod
-http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100763
+Link: http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100763
 
 # Support font
 Support font from [GUST e-foundry](http://www.gust.org.pl/projects/e-foundry)
