@@ -13,13 +13,12 @@ Moaning and fart sounds downloaded from [Freesound](http://freesound.org)
 + moan, by @corsica_s
 
 ## Music
-Background music from [Kevin MacLeod](http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100763)
-+ "Aces High" by Kevin MacLeod
+Background music from [Kevin MacLeod](http://incompetech.com/)
++ [Aces High](http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100763), by Kevin MacLeod
 
-# Support font
+## Support font
 Support font from [GUST e-foundry](http://www.gust.org.pl/projects/e-foundry)
-+ TeX Gyre Schola, by Boguslaw Jackowski and Janusz M. Nowacki
-http://www.gust.org.pl/projects/e-foundry/tex-gyre/schola
++ [TeX Gyre Schola](http://www.gust.org.pl/projects/e-foundry/tex-gyre/schola), by Boguslaw Jackowski and Janusz M. Nowacki
 
 ## Authors
 
