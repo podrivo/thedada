@@ -19,7 +19,7 @@ $(document).on('mousemove', function(e){
 });
 
 
-// Play
+// Random audios - nunca repetir
 var uniqueRandoms = [];
 var numRandoms = 8;
 function makeUniqueRandom() {
@@ -37,9 +37,11 @@ function makeUniqueRandom() {
   return val;
 }
 
+
+// Play audios on hover
 $('.anus span').hover(function() {
-  audio = $('#audio-0' + makeUniqueRandom() )[0].play();
   $('body').addClass('on');
+  audio = $('#audio-0' + (makeUniqueRandom() + 1) )[0].play();
 }, function() {
   $('body').removeClass('on');
 });
@@ -55,6 +57,7 @@ $('section').hover(function() {
 
 $(document).ready(function () {
 
+
   // Random duet
   total = 6;
   randomNumber = Math.round(Math.random() * (total - 1)) + 1;
@@ -62,10 +65,11 @@ $(document).ready(function () {
   $('.anus span').addClass('icon-duetos-0' + randomNumber + '-02');
 
 
-  // Fart every 20s
+  // Fart interval
   setInterval(fart, 25000);
+  totalFart = 2;
   function fart(){
-    $('#fart-0' + Math.ceil(Math.random() * 2))[0].play();
+    $('.fart-0' + (Math.round(Math.random() * (totalFart - 1)) + 1) )[0].play();
   }
 });
 
