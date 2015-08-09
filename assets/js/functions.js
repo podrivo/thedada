@@ -1,3 +1,4 @@
+
 // Seguir mouse
 var hand = $('.hand');
 var handCenter = [hand.offset().left+hand.width()/2, hand.offset().top+hand.height()/2];
@@ -19,8 +20,33 @@ $(document).on('mousemove', function(e){
 
 
 // Play
+var uniqueRandoms = [];
+var numRandoms = 8;
+function makeUniqueRandom() {
+  // refill the array if needed
+  if (!uniqueRandoms.length) {
+    for (var i = 0; i < numRandoms; i++) {
+      uniqueRandoms.push(i);
+    }
+  }
+  var index = Math.floor(Math.random() * uniqueRandoms.length);
+  var val = uniqueRandoms[index];
+
+  // now remove that value from the array
+  uniqueRandoms.splice(index, 1);
+  return val;
+}
+
 $('.anus span').hover(function() {
-  audio = $('#audio-0' + Math.ceil(Math.random() * 6))[0].play();
+  audio = $('#audio-0' + makeUniqueRandom() )[0].play();
+  $('body').addClass('on');
+}, function() {
+  $('body').removeClass('on');
+});
+
+
+// Hover download
+$('section').hover(function() {
   $('body').addClass('on');
 }, function() {
   $('body').removeClass('on');
@@ -33,8 +59,14 @@ $(document).ready(function () {
   total = 6;
   randomNumber = Math.round(Math.random() * (total - 1)) + 1;
   $('.hand span').addClass('icon-duetos-0' + randomNumber + '-01');
-  $('.anus').addClass('icon-duetos-0' + randomNumber + '-02');
+  $('.anus span').addClass('icon-duetos-0' + randomNumber + '-02');
 
+
+  // Fart every 20s
+  setInterval(fart, 25000);
+  function fart(){
+    $('#fart-0' + Math.ceil(Math.random() * 2))[0].play();
+  }
 });
 
 
@@ -42,6 +74,6 @@ $(window).load(function() {
 
   // Song volume
   var song = $('#song')[0];
-  song.volume = 0.25;
+  song.volume = 0.2;
   song.play();
 });
