@@ -159,7 +159,6 @@ section a:hover p em:before {
   color: #471013;
   transform: rotate(90deg) translateX(-15px);
   animation: point 2s infinite ease-in-out;
-  /*background-color: rgba(0,0,0,.3);*/
 }
 @keyframes point {50% {transform: rotate(90deg) translateX(15px);}}
 
@@ -212,7 +211,6 @@ section a:hover p em:before {
 }
 
 .anus span {
-  /*background: #333;*/
   position: absolute;
   top: 0;
   right: 0;
@@ -226,7 +224,6 @@ section a:hover p em:before {
 }
 
 .anus span:before {
-  /*background: rgba(255,255,255,.5);*/
   position: relative;
   top: -40px;
   left: -40px;
