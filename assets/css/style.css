@@ -65,21 +65,78 @@ html {
 body {
   background: #fce7dd;
   transition: all .2s;
+  font-family: 'texgyrescholaregular', serif;
+  color: #471013;
 }
+.anus {cursor: none;}
 
 
 /* Title */
 h1 {
-  font-family: 'texgyrescholaregular', serif;
   font-size: 36px;
   text-align: center;
-  color: #471013;
   margin-top: 4%;
 }
 
-/* Hand */
-* {cursor: none !important;}
 
+/* Descrição */
+section {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4%;
+  font-size: 18px;
+  line-height: 26px;
+  max-width: 570px;
+  margin: 0 auto;
+  color: #e01142;
+  z-index: 99;
+  cursor: pointer !important;
+}
+
+section a {
+  display: block;
+  color: #e01142;
+  padding: 30px;
+  text-decoration: none;
+  cursor: pointer !important;
+}
+
+section a:hover {
+  background: #fce7dd;
+  text-decoration: none;
+}
+
+section a em {
+  position: relative;
+  z-index: 10;
+}
+
+section a em:before {
+  content: '';
+  background-color: #e01142;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  margin-left: -3px;
+  z-index: 0;
+  transition: all .3s .1s;
+}
+
+section a:hover em:before {
+  padding: 0 3px;
+  width: 100%;
+  z-index: -1;
+}
+
+section a:hover p em:before {
+  transition-delay: .3s;
+}
+
+
+/* Hand */
 .hand {
   position: absolute;
   top: 50%;
@@ -88,7 +145,6 @@ h1 {
   height: 70px;
   margin: -35px 0 0 -35px;
   pointer-events: none;
-  cursor: pointer;
 }
 
 .hand span {
@@ -102,7 +158,7 @@ h1 {
   text-align: center;
   color: #471013;
   transform: rotate(90deg) translateX(-15px);
-  animation: point 2s infinite;
+  animation: point 2s infinite ease-in-out;
   /*background-color: rgba(0,0,0,.3);*/
 }
 @keyframes point {50% {transform: rotate(90deg) translateX(15px);}}
@@ -151,12 +207,12 @@ h1 {
   bottom: 0;
   left: 0;
   margin: auto;
-  font-size: 150px;
   line-height: 100vh;
   color: #e01142;
 }
 
 .anus span {
+  /*background: #333;*/
   position: absolute;
   top: 0;
   right: 0;
@@ -166,6 +222,21 @@ h1 {
   width: 70px;
   height: 70px;
   display: block;
+  overflow: hidden;
+}
+
+.anus span:before {
+  /*background: rgba(255,255,255,.5);*/
+  position: relative;
+  top: -40px;
+  left: -40px;
+  font-size: 150px;
+  transition: all .2s;
+}
+.anus span:hover:before {
+  top: -20px;
+  left: -20px;
+  font-size: 110px;
 }
 
 
