@@ -1,7 +1,9 @@
 # The Dada
 Relaxe sua musculatura e fique à vontade.
 
-You can buy the entire font on [MyFonts](https://www.myfonts.com/fonts/typeoca/the-dada/).
+The Dada is a dumb idea that went too far, but nonetheless, it can still be quite useful for designers in need of manicules.
+
+Typeface available for purchase on [MyFonts](https://www.myfonts.com/fonts/typeoca/the-dada/).
 
 ## Sounds
 Moaning and fart sounds downloaded from [Freesound](http://freesound.org).
@@ -25,8 +27,11 @@ Support font from [GUST e-foundry](http://www.gust.org.pl/projects/e-foundry).
 Gabriel Figueiredo
 
 + http://gabrielfigueiredo.com/
++ https://twitter.com/merdesigner
++ https://www.myfonts.com/foundry/Type%C3%B3ca/
 
 Pedro Ivo Hudson
 
 + http://podrivo.com/
-+ http://github.com/podrivo
++ https://github.com/podrivo
++ https://twitter.com/podrivo
