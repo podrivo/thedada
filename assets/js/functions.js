@@ -21,8 +21,8 @@ $(document).on('mousemove', function(e){
 
 // Random audios - nunca repetir
 var uniqueRandoms = [];
-var numRandoms = 8;
-function makeUniqueRandom() {
+var numRandoms = 6;
+function moanUniqueRandom() {
   // refill the array if needed
   if (!uniqueRandoms.length) {
     for (var i = 0; i < numRandoms; i++) {
@@ -39,11 +39,20 @@ function makeUniqueRandom() {
 
 
 // Play audios on hover
-$('.anus span').hover(function() {
-  $('body').addClass('on');
-  audio = $('#audio-0' + (makeUniqueRandom() + 1) )[0].play();
-}, function() {
-  $('body').removeClass('on');
+// 23 moans - 1 fart
+var moan = 0;
+$('.anus span').on('mouseover', function() {
+
+  var fartTotal = Math.floor(Math.random() * 2) + 1;
+  if (moan > 23) {
+    
+    audioFart = $('#fart-0' + (fartTotal))[0].play();
+    moan = null;
+
+  } else {
+    audio = $('#audio-0' + (moanUniqueRandom() + 1) )[0].play();
+  }
+  moan++
 });
 
 
@@ -57,19 +66,18 @@ $('section').hover(function() {
 
 $(document).ready(function () {
 
-
   // Random duet
-  total = 6;
-  randomNumber = Math.round(Math.random() * (total - 1)) + 1;
+  duetTotal = 6;
+  randomNumber = Math.round(Math.random() * (duetTotal - 1)) + 1;
   $('.hand span').addClass('icon-duetos-0' + randomNumber + '-01');
   $('.anus span').addClass('icon-duetos-0' + randomNumber + '-02');
 
 
   // Fart interval
-  setInterval(fart, 25000);
+  setInterval(fart, 180000);
   totalFart = 2;
   function fart(){
-    $('.fart-0' + (Math.round(Math.random() * (totalFart - 1)) + 1) )[0].play();
+    $('#fart-0' + (Math.round(Math.random() * (totalFart - 1)) + 1) )[0].play();
   }
 });
 
