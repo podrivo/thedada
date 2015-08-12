@@ -45,7 +45,7 @@ $('.anus span').on('mouseover', function() {
 
   var fartTotal = Math.floor(Math.random() * 2) + 1;
   if (moan > 2) {
-    $('section').addClass('moved');
+    $('section').fadeIn(1000).addClass('moved');
   }
   if (moan > 23) {
     

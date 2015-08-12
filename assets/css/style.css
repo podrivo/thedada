@@ -97,6 +97,7 @@ section {
   cursor: pointer !important;
   opacity: 0;
   transition: all 1s;
+  display: none;
 }
 
 section a {
