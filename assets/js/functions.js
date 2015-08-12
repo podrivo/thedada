@@ -44,6 +44,9 @@ var moan = 0;
 $('.anus span').on('mouseover', function() {
 
   var fartTotal = Math.floor(Math.random() * 2) + 1;
+  if (moan > 2) {
+    $('section').addClass('moved');
+  }
   if (moan > 23) {
     
     audioFart = $('#fart-0' + (fartTotal))[0].play();
@@ -87,5 +90,5 @@ $(window).load(function() {
   // Song volume
   var song = $('#song')[0];
   song.volume = 0.2;
-  song.play();
+  // song.play();
 });

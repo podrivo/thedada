@@ -66,17 +66,20 @@ body {
   background: #fce7dd;
   transition: all .2s;
   font-family: 'texgyrescholaregular', serif;
-  color: #471013;
+  color: #e01142;
 }
 .anus {cursor: none;}
 
 
 /* Title */
 h1 {
-  font-size: 36px;
+  position: relative;
+  color: #e01142;
+  font-size: 26px;
   text-align: center;
-  margin-top: 4%;
+  margin-top: 5%;
 }
+/*.on h1 {color: #e01142;}*/
 
 
 /* Descrição */
@@ -92,6 +95,8 @@ section {
   color: #e01142;
   z-index: 99;
   cursor: pointer !important;
+  opacity: 0;
+  transition: all 1s;
 }
 
 section a {
@@ -104,7 +109,6 @@ section a {
 
 section a:hover {
   color: #fce7dd;
-  /*background: #fce7dd;*/
   text-decoration: none;
 }
 
@@ -134,6 +138,10 @@ section a:hover em:before {
 
 section a:hover p em:before {
   transition-delay: .3s;
+}
+
+section.moved {
+  opacity: 1;
 }
 
 
@@ -232,6 +240,10 @@ section a:hover p em:before {
   height: 70px;
   display: block;
   overflow: hidden;
+}
+
+.on .anus span {
+  opacity: 0;
 }
 
 .anus span:before {
