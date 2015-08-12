@@ -103,8 +103,8 @@ $(window).load(function() {
   song.play();
 
   // console.log(audioReload);
-  $(song).on('ended', function() {
-    location.reload();
-    console.log('fim');
-  });
+  // $(song).on('ended', function() {
+  //   location.reload();
+  //   console.log('fim');
+  // });
 });
