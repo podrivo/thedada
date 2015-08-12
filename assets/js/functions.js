@@ -89,6 +89,6 @@ $(window).load(function() {
 
   // Song volume
   var song = $('#song')[0];
-  song.volume = 0.2;
-  // song.play();
+  song.volume = 0.15;
+  song.play();
 });
