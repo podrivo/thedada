@@ -95,8 +95,6 @@ section {
   color: #e01142;
   z-index: 99;
   cursor: pointer !important;
-  opacity: 0;
-  transition: all 1s;
   display: none;
 }
 
@@ -122,10 +120,10 @@ section a em:before {
   content: '';
   background-color: #fce7dd;
   position: absolute;
-  bottom: 1px;
+  bottom: 0;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   margin-left: -3px;
   z-index: 0;
   transition: all .3s .1s;
@@ -139,10 +137,6 @@ section a:hover em:before {
 
 section a:hover p em:before {
   transition-delay: .3s;
-}
-
-section.moved {
-  opacity: 1;
 }
 
 
@@ -255,9 +249,15 @@ section.moved {
   transition: all .2s;
 }
 .anus span:hover:before {
-  top: -20px;
-  left: -20px;
-  font-size: 110px;
+  top: -30px;
+  left: -30px;
+  font-size: 130px;
+}
+
+.anus span:active:before {
+  top: -15px;
+  left: -15px;
+  font-size: 100px;
 }
 
 .anus span a {

@@ -43,20 +43,30 @@ function moanUniqueRandom() {
 var moan = 0;
 $('.anus span').on('mouseover', function() {
 
+  moan++
   var fartTotal = Math.floor(Math.random() * 2) + 1;
-  if (moan > 2) {
-    $('section').fadeIn(1000).addClass('moved');
+  if (moan === 4) {
+    $('section').fadeIn(1000);
   }
   if (moan > 23) {
     
-    audioFart = $('#fart-0' + (fartTotal))[0].play();
-    moan = null;
+    audioFart = $('#fart-0' + fartTotal)[0].play();
+    moan = 0;
 
   } else {
     audio = $('#audio-0' + (moanUniqueRandom() + 1) )[0].play();
   }
-  moan++
 });
+
+$('.anus span').click(function() {
+  duetTotal = 6;
+  randomNumber = Math.round(Math.random() * (duetTotal - 1)) + 1;
+
+  $('.hand span').removeClass().addClass('icon-duetos-0' + randomNumber + '-01');
+  $('.anus span').removeClass().addClass('icon-duetos-0' + randomNumber + '-02');
+});
+
+
 
 
 // Hover download
@@ -91,4 +101,10 @@ $(window).load(function() {
   var song = $('#song')[0];
   song.volume = 0.15;
   song.play();
+
+  // console.log(audioReload);
+  $(song).on('ended', function() {
+    location.reload();
+    console.log('fim');
+  });
 });
