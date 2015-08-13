@@ -45,7 +45,7 @@ $('.anus span').on('mouseover', function() {
 
   moan++
   var fartTotal = Math.floor(Math.random() * 2) + 1;
-  if (moan === 4) {
+  if (moan === 3) {
     $('section').fadeIn(1000);
   }
   if (moan > 23) {
@@ -59,6 +59,9 @@ $('.anus span').on('mouseover', function() {
 });
 
 $('.anus span').click(function() {
+
+  $('section').fadeIn(1000);
+
   duetTotal = 6;
   randomNumber = Math.round(Math.random() * (duetTotal - 1)) + 1;
 
@@ -101,10 +104,4 @@ $(window).load(function() {
   var song = $('#song')[0];
   song.volume = 0.15;
   song.play();
-
-  // console.log(audioReload);
-  // $(song).on('ended', function() {
-  //   location.reload();
-  //   console.log('fim');
-  // });
 });
