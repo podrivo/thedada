@@ -1,5 +1,5 @@
 # The Dada
-Relaxe sua musculatura e fique à vontade.
+Relax your muscles and make yourself comfortable.
 
 The Dada is a dumb idea that went too far, but nonetheless, it can still be quite useful for designers in need of manicules.
 
@@ -13,6 +13,8 @@ Moaning and fart sounds downloaded from [Freesound](http://freesound.org).
 + Sex groaning 3, by @safadancer
 + ooh female various, by @audiorichter
 + moan, by @corsica_s
++ FART 19, by @IFartInUrGeneralDirection
++ Short Fart_01, by @DSISStudios
 
 ## Music
 Background music from [Kevin MacLeod](http://incompetech.com/).
