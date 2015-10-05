@@ -235,10 +235,8 @@ section a:hover p em:before {
   height: 70px;
   display: block;
   overflow: hidden;
-}
-
-.on .anus span {
-  opacity: 0;
+  transition: transform .2s, opacity .4s;
+  /*transition: all .2s;*/
 }
 
 .anus span:before {
@@ -269,5 +267,15 @@ section a:hover p em:before {
 
 
 /* On */
-body.on {background-color: #471013;}
-.on .hand span, .on h1 {color: #fce7dd;}
+body.on {
+  background-color: #471013;
+}
+
+.on .hand span, .on h1 {
+  color: #fce7dd;
+}
+
+.on .anus span {
+  transform: scale(0);
+  opacity: 0;
+}
