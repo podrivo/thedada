@@ -18,19 +18,19 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 @font-face{
     font-family:'Chip Regular';
-    src:url("../../grauna/fonts/chip_ss_crouwel.woff2") format("woff2"),url("../fonts/chip_ss_crouwel.woff") format("woff");
+    src:url("../../../grauna/fonts/chip_ss_crouwel.woff2") format("woff2"),url("../fonts/chip_ss_crouwel.woff") format("woff");
     font-weight:normal;
     font-style:normal
 }
 @font-face{
     font-family:'Chip Italic';
-    src:url("../../grauna/fonts/chip_ssi_crouwel.woff2") format("woff2"),url("../fonts/chip_ssi_crouwel.woff") format("woff");
+    src:url("../../../grauna/fonts/chip_ssi_crouwel.woff2") format("woff2"),url("../fonts/chip_ssi_crouwel.woff") format("woff");
     font-weight:normal;
     font-style:normal
 }
 @font-face{
     font-family:'Chip Bold';
-    src:url("../../grauna/fonts/chip_ssb_crouwel.woff2") format("woff2"),url("../fonts/chi p_ssb_crouwel.woff") format("woff");
+    src:url("../../../grauna/fonts/chip_ssb_crouwel.woff2") format("woff2"),url("../fonts/chi p_ssb_crouwel.woff") format("woff");
     font-weight:normal;
     font-style:normal
 }
